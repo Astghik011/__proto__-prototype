@@ -4,12 +4,13 @@
 // If a plane takes off, its isFlying property is set to true.
 // If a plane lands, its isFlying property is set to false
 
-const airplain = {
+const Airplane = {
     name: "Fifi",
     isFlying:false,
-    
+
     takeOff(){
-        return this.isFlying = true;
+        return this.isFlying = true; 
+        // the editor automatically changes the name to this, so I left it as it is
     },
 
     land(){
@@ -17,5 +18,5 @@ const airplain = {
     }
 }
 
-console.log(airplain.takeOff());
-console.log(airplain.land());
+console.log(Airplane.takeOff());
+console.log(Airplane.land());
